@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+  <fieldset>
+    <legend><b>
+        <h3>Application form
+      </b></h3>
+    </legend>
+    <header>
+      <h1 align="center">
+        <u>Visa application</u>
+      </h1>
+     
+    </header>
+    <main>
+      <form action="">
+        <div>
+          <h2><u> Personal imformation</u></h2>
+          First name <input type="text" placeholder="First name" required>
+          Middle name <input type="text" placeholder="Middle name (if any)">
+          second name <input type="text" placeholder="second name" required>
+        </div>
+        <div>
+          <br>
+          <section><b><u> Choose your gender</u></b> <br>
+            <label for="male">
+              male<input type="radio" value="male" name="choose gender" id="male">
+            </label>
+
+            <label for="female">
+              female<input type="radio" name="choose gender" value="female" id="female">
+            </label>
+
+            <label for="other">
+              other <input type="radio" name="choose gender" value="other" id="other">
+            </label>
+          </section>
+          <br> <u>Enter Mobile number</u><input type="text" maxlength="10">
+        </div>
+        <br>
+        <div>
+          <section><u>Select your Qualification</u></section>
+          <select name="Qualification" id="Qualification">
+            <option value="Select your Qualification">Select your Qualification</option>
+            <option value="10th pass">10th Pass</option>
+            <option value="12th pass">10th Pass</option>
+            <option value="Graduate in non-technical">Graduate in non-technical</option>
+            <option value="Graduate in Technical">Graduate in Technical</option>
+            <option value="Post Graduate in non-technical">Post Graduate in non non-technical</option>
+            <option value="Post Graduate in Technical">Post Graduate in Technical</option>
+          </select>
+        </div>
+        <div>
+          <hr>
+          <h2><u>Contact address</u></h2>
+          <section>
+            <b><u> Enter permanent address</u></b><br>
+            AT-&nbsp;&nbsp;&nbsp;<input type="text" required></input>PO-&nbsp;&nbsp;<input type="text"
+              required></input><br>
+            Dist- <input type="text" required></input>state-<input type="text" required></input>
+            pin code- <input type="text" required></input><br>Country-<input type="text" value="India" readonly>
+          </section>
+
+          <section>
+            <b><u> Enter present address</u></b><br>
+            <i>*If present and permanent addresses are different then fill this.</i><br>
+            AT-&nbsp;&nbsp;&nbsp;<input type="text" required></input>PO-&nbsp;&nbsp;<input type="text"
+              required></input><br>
+            Dist- <input type="text" required></input>state-<input type="text" required></input>
+            pin code- <input type="text" required></input><br>Country-<input type="text" value="India" readonly>
+          </section>
+        </div><br>
+        <div>
+          <hr>
+          <section>
+            <h2><u> Why do you want to apply for Visa</u></h2>
+            <textarea name="Reason why you want to visit abroad" id="Reason" cols="30" rows="5"
+              placeholder="Specify reason why you want to visit abroad" required></textarea>
+          </section>
+        </div>
+        <div>
+          <u><B>Additional details</B></u><br>
+          Date of apply<input type="date">&nbsp;&nbsp;
+          Place<input type="text"><br><br>
+          <b>Signature of applicant:</b><br><textarea name="Signature" id="Signature"></textarea>
+        </div>
+        <div><b><em>click the below link for payment:</em></b><br>
+          <a href="payment.html" target="_blank">Payment</a><br>
+          <br>Attach the payment file here:<input type="file"><br>
+        </div>
+        <br>
+        <div>
+          <button>Save Draft</button>
+          <button>submit</button>
+        </div>
+    </main>
+    </form>
+  </fieldset>
+</body>
+
+</html>

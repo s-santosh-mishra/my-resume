@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+
+<body>
+    <header>
+        <h1><u>Payment details</u></h1>
+    </header>
+    <main>
+        <div>
+            <em>Fields with '*' are required</em><br><br>
+            <section>
+                <b>card type*:</b><br>
+                <select name="type" id="type" required>
+                    <option value="choose your card type">choose your card type</option>
+                    <option value="Visa">visa</option>
+                    <option value="Master card">Master card</option>
+                    <option value="RuPay">RuPay</option>
+                </select>
+            </section><br>
+            <section>
+                <b>Card number*:</b><input type="text" maxlength="16" placeholder="Enter your card details"><br><br>
+                <b>expiry date</b><br>
+                Month, Year<input type="month"><br><br>
+                <b>Card holder's name*:</b> <input type="text" placeholder="Enter card holders name here"><br> <br>
+                <b>E-mail*:</b><input type="text" placeholder="Enter your Email id here"><br><br>
+            </section>
+            <section>
+               <b> Amount to be charged:</b><input type="text" size="4px" value="₹1299" readonly>
+            </section>
+            <section>
+                <b><u>Declaration:</u></b><br>
+                I have read and agree to the terms and conditions. <input type="checkbox" id="Declaration">
+            </section><br>
+            <button>Cancel</button>
+            <button>submit</button>
+        </div>
+
+    </main>
+</body>
+
+</html>

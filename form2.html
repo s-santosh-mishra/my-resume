@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="form 2.css">
+    <style>
+        main {
+    border: dashed;
+    border-color: black;
+}
+
+body {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+#address {
+    vertical-align: middle;
+}
+
+.view-width{
+    margin-left: 22vw;
+}
+
+.input-vw{
+    margin-left: 18.65vw;
+}
+#city{
+    margin-left: 20.2vw;
+}
+
+#pin{
+    margin-left: 18.40vw;
+} 
+
+#state{
+    margin-left: 20.15vw;
+}
+
+#country{
+    margin-left: 18.35vw;
+}
+
+.label{
+    vertical-align: middle;
+}
+
+#first-nm{
+    margin-left: 17.87vw;
+}
+#mid-nm{
+    margin-left: 12.88vw;}
+#Last-nm{
+    margin-left: 17.7vw;
+}
+#mob-no{
+    margin-left: 15.25vw;
+}
+#male{
+    margin-left: 13vw;
+}
+
+#dob{
+    margin-left: 12.3vw;
+}
+
+#imformation{
+    line-height: 50px;
+}
+
+.submit{
+   margin-left: 50%;
+}
+    </style>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Student registration form</h1>
+    </header>
+
+    <main>
+        <div id="imformation">
+            <form action="">
+                <h2>Details</h2>
+                <section>
+                    <span>first name</span><input type="text" placeholder="Enter your first name" required
+                        maxlength="20" id="first-nm"><br>
+                    <span>second name(If any)</span><input type="text" placeholder="Enter your second name" required
+                        maxlength="20" id="mid-nm"><br>
+                    <span>Last name</span><input type="text" placeholder="Enter your Last name" required
+                        maxlength="20" id="Last-nm"><br>
+                    <span>Mobile number</span><input type="text" placeholder="Enter  your mobile number" required
+                        maxlength="10" id="mob-no"><br>
+
+                    <span>
+                        Select your gender:
+                    </span>
+                    <input type="radio" id="male" name="gender"><label for="male">male</label>
+                    <input type="radio" id="female" name="gender"><label for="female">female</label>
+                    <input type="radio" id="other" name="gender"><label for="other">other</label>
+                    <br>
+                    <label for="dob">Date of birth(D.O.B)</label> <input type="date" id="dob">
+                    <br>
+                </section>
+
+
+                <!-- css done -->
+
+                
+                
+                    <section>
+                <label for="address" class="add-label">Address</label><textarea name="address" id="address" cols="30" rows="5" class="input-vw" placeholder="Enter your address"></textarea><br>
+
+
+                <label for="city">City</label> <input type="text" placeholder="Enter your city name" id="city"><br>
+                <label for="pin">Pin code</label><input type="text" placeholder="Enter pin-code" id="pin"><br>
+                <label for="state">State</label><input type="text" placeholder="Enter your state name" id="state"> <br>
+
+                <label for="country">Country</label> <input type="text" id="country" placeholder="India"><br>
+                </section>
+
+
+
+                <!-- this part css is done -->
+
+
+
+            </div>
+                <span>
+                    Hobbies:
+                </span>
+                <section class="view-width">
+                    <input type="checkbox" id="Reading"><label for="Reading">Reading</label>
+                    <input type="checkbox" id="writing"><label for="writing">Writing</label>
+                    <input type="checkbox" id="singing"><label for="singing">Singing</label>
+                    <input type="checkbox" id="Dancing"><label for="Dancing">Dancing</label><br>
+                    <input type="checkbox" id="travelling">Travelling<label for="travelling"></label>
+                    <input type="checkbox" id="others"><label for="others">Others</label><input type="text"><br><br>
+                </section>
+                <Span>
+                    Qualification:
+                </Span>
+                <section class="view-width"><input type="checkbox" id="tenth"><label for="tenth">10th</label><br>
+                    <input type="checkbox" id="twelveth"><label for="twelveth">12th</label><br>
+                    <input type="checkbox" id="graduate"><label for="graduate">Graduate</label><br>
+                    <input type="checkbox" id="post-graduate"><label for="post-graduate">Post graduate</label><br>
+                    <input type="checkbox" id="Phd"><label for="Phd">Phd</label><br>
+                </section>
+                <span class="middle">
+                    Course applied for:
+                </span>
+                <section class="view-width">
+                    <input type="radio" id="B.CA" name="Course"><label for="B.CA">B.CA</label><br>
+                    <input type="radio" id="B.Com" name="Course"><label for="B.Com">B.Com</label><br>
+                    <input type="radio" id="B.Sc" name="Course"><label for="B.Sc">B.Sc</label><br>
+                    <input type="radio" id="BA" name="Course"><label for="BA">BA</label><br>
+                    <input type="radio" id="MCA" name="Course"><label for="MCA">MCA</label><br>
+                    <input type="radio" id="M>Com" name="Course"><label for="M>Com">M.Com</label><br>
+                    <input type="radio" id="M.Sc" name="Course">M.Sc<label for="M.Sc"></label><br>
+                    <input type="radio" id="MA" name="Course"><label for="MA">MA</label><br>
+                </section>
+                <input type="submit" class="submit">
+                <button>Reset</button><br><br>
+            </form>
+        
+    </main>
+
+</body>
+
+</html>

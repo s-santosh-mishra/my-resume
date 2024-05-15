@@ -6,8 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My resume</title>
     <style>
-        body{
-            background-color: aliceblue;
+        body {
+            background-color: rgb(163, 191, 213);
+        }
+        #visa {
+            margin-left: 5px;
+        }
+        #form {
+            margin-left: 94px;
+        }
+
+        #solars {
+            margin-left: 70px;
+        }
+
+        #error {
+            margin-left: 73px;
+        }
+
+        .image {
+            margin-top: 5px;
+           padding: 5px;
+            border: 2px none black;
+            /* box-sizing: border-box;*/
+        } 
+
+        #div2 {
+            display: inline-block;
         }
     </style>
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
@@ -15,17 +40,20 @@
 
 <body>
     <main>
-        <div>
+        <div class="profile">
             <table>
                 <tr>
                     <th>
-                        <img width="165px" src="WhatsApp Image 2024-05-03 at 18.33.01_09c6ed7.jpg" alt="My photo" title="My photo"></th>
+                        <img width="165px" src="WhatsApp Image 2024-05-03 at 18.33.01_09c6ed7.jpg" alt="My photo"
+                            title="My photo">
+                    </th>
                     <th>
                         <h1>Santosh kumar mishra</h1>
                         <h2>Contact info:</h2>
-                       <label for="">Address:</label>Bhadrak, Odisha, 756100<br>
-                        <label for="">E-mail:</label><a href="mailto:santoshku.mishra03@gmail.com">santoshku.mishra03@gmail.com</a><br>
-                        <label for="">Mob-no:</label><a href="tel:9178299774">9178299774</a><br>
+                        <span>Address:</span></label>Bhadrak, Odisha, 756100<br>
+                        <span>E-mail:</span></label><a
+                            href="mailto:santoshku.mishra03@gmail.com">santoshku.mishra03@gmail.com</a><br>
+                        <span>Mob-no:</span></label><a href="tel:9178299774">9178299774</a><br>
                     </th>
                 </tr>
             </table>
@@ -77,26 +105,35 @@
                 <li>Hard working</li>
             </ul>
         </div>
-        <div>
-            <h2>My projects:</h2>
-            <ul type="none">
-                <li><a href="form.html" target="_blank">Visa application form</a></li>
-                <li><a href="form2.html" target="_blank">Student registration form</a></li>
-                <li><a href="table.html" target="_blank">Data about planets of our solar system</a></li>
-                <li><a href="table-2.html" target="_blank">Error rate in different forms</a></li>
-            </ul>
-            <span><h3>Reference images:</h3></span>
-            <img src="Screenshot (2).png" alt="A appliaction to apply Visa" height="120px">
-           
-           
-            
-            
-            <img src="Screenshot (1).png" alt="Student registration form" height="120px">
+        
+        <h2>My projects:</h2>
 
-           
-            <img src="html2.png" alt="Error rate in different forms" height="120px" width="300px">
-            
-            <img src="table.png" alt="Data about planets of our solar system" height="120px" width="300px">
+        <a href="/Projects/form.html" target="_blank" id="visa">Visa application form</a>
+
+
+        <a href="/projects/form2.html" target="_blank" id="form">Student registration form</a>
+
+        <a href="/projects/table.html" target="_blank" id="solars">Data about planets of our solar system</a>
+
+        <a href="/projects/table-2.html" target="_blank" id="error">Error rate in different forms</a>
+
+
+
+        <br>
+
+        <div id="div2">
+            <img src="/Projects/Screenshot (2).png" alt="A appliaction to apply Visa" height="120px"
+                class="image">&nbsp;&nbsp;
+
+            <img src="/Projects/Screenshot (1).png" alt="Student registration form" height="120px"
+                class="image">&nbsp;&nbsp;
+
+
+            <img src="/Projects/html2.png" alt="Error rate in different forms" height="120px" width="300px"
+                class="image">&nbsp;&nbsp;
+
+            <img src="/Projects/table.png" alt="Data about planets of our solar system" height="120px" width="300px"
+                class="image">
         </div>
         <div>
 
@@ -122,15 +159,19 @@
             </table>
         </div>
         <hr>
-        <div>
-            <table>
-                <tr>
-                    <td>Date:&nbsp;<input type="text" id="Date"><br>
-                        Place:<input type="text" id="Place"></td>
-                    <td> signature:<br><textarea name="Signature" id="signature"></textarea></td>
-                </tr>
-            </table>
-        </div>
+        <footer>
+            <div>
+                <table>
+                    <tr>
+                        <td>Date:&nbsp;<input type="text" id="Date"><br>
+                            Place:<input type="text" id="Place"></td>
+                        <td id="signature"> signature:<br><textarea name="Signature" id="signature"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+
     </main>
 </body>
+
 </html>

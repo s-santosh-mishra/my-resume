@@ -25,58 +25,70 @@ h1 {
     vertical-align: middle;
 }
 
+
 .view-width{
-    margin-left: 22vw;
+    margin-left: 300px;
 }
 
-.input-vw{
+
+/* .input-vw{
     margin-left: 18.65vw;
+} */
+
+
+#addresss {
+    margin-right: 253px;
 }
-#city{
-    margin-left: 20.2vw;
+#citt {
+    margin-right: 274px;
+}
+#pinc {
+    margin-right: 250px;
+}
+#cont {
+    margin-right: 248px;
+}
+#stat {
+    margin-right: 273px;
 }
 
-#pin{
-    margin-left: 18.40vw;
-} 
 
-#state{
-    margin-left: 20.15vw;
-}
 
-#country{
-    margin-left: 18.35vw;
-}
+
 
 .label{
     vertical-align: middle;
 }
-
-#first-nm{
-    margin-left: 17.87vw;
+#firstt {
+    margin-right: 240px;
 }
-#mid-nm{
-    margin-left: 12.88vw;}
-#Last-nm{
-    margin-left: 17.7vw;
-}
-#mob-no{
-    margin-left: 15.25vw;
-}
-#male{
-    margin-left: 13vw;
+#secondd {
+    margin-right: 172px;
 }
 
-#dob{
-    margin-left: 12.3vw;
+#lastt{
+    margin-right: 238px;
 }
+
+#mobb{
+    margin-right: 205px;
+}
+
+#gen {
+    margin-right: 170px;
+}
+
+#dobb {
+    margin-right: 167px;
+}
+
 
 #imformation{
     line-height: 50px;
 }
 
 .submit{
-   margin-left: 50%;
+   margin-left: 45%;
 }
     </style>
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
@@ -92,23 +104,23 @@ h1 {
             <form action="" id="form2">
                 <h2>Details</h2>
                 <section>
-                    <span>first name</span><input type="text" placeholder="Enter your first name" required
-                        maxlength="20" id="first-nm"><br>
-                    <span>second name(If any)</span><input type="text" placeholder="Enter your second name" required
-                        maxlength="20" id="mid-nm"><br>
-                    <span>Last name</span><input type="text" placeholder="Enter your Last name" required
-                        maxlength="20" id="Last-nm"><br>
-                    <span>Mobile number</span><input type="text" placeholder="Enter  your mobile number" required
-                        maxlength="10" id="mob-no"><br>
+                    <span id="firstt" >first name</span><input type="text" placeholder="Enter your first name" required
+                        maxlength="20"><br>
+                    <span id="secondd">second name(If any)</span><input type="text" placeholder="Enter your second name" required
+                        maxlength="20"><br>
+                    <span id="lastt">Last name</span><input type="text" placeholder="Enter your Last name" required
+                        maxlength="20"><br>
+                    <span id="mobb">Mobile number</span><input type="text" placeholder="Enter  your mobile number" required
+                        maxlength="10"><br>
 
-                    <span>
+                    <span id="gen">
                         Select your gender:
                     </span>
                     <input type="radio" id="male" name="gender"><label for="male">male</label>
                     <input type="radio" id="female" name="gender"><label for="female">female</label>
                     <input type="radio" id="other" name="gender"><label for="other">other</label>
                     <br>
-                    <label for="dob">Date of birth(D.O.B)</label> <input type="date" id="dob">
+                    <label for="dob"><span id="dobb">Date of birth(D.O.B)</span></label> <input type="date" id="dob">
                     <br>
                 </section>
 
@@ -118,14 +130,14 @@ h1 {
                 
                 
                     <section>
-                <label for="address" class="add-label">Address</label><textarea name="address" id="address" cols="30" rows="5" class="input-vw" placeholder="Enter your address"></textarea><br>
+                <label for="address" class="add-label" id="addresss">Address</label><textarea name="address" id="address" cols="30" rows="5" class="input-vw" placeholder="Enter your address"></textarea><br>
 
 
-                <label for="city">City</label> <input type="text" placeholder="Enter your city name" id="city"><br>
-                <label for="pin">Pin code</label><input type="text" placeholder="Enter pin-code" id="pin"><br>
-                <label for="state">State</label><input type="text" placeholder="Enter your state name" id="state"> <br>
+                <label for="city" id="citt">City</label> <input type="text" placeholder="Enter your city name" id="city"><br>
+                <label for="pin" id="pinc">Pin code</label><input type="text" placeholder="Enter pin-code" id="pin"><br>
+                <label for="state" id="stat">State</label><input type="text" placeholder="Enter your state name" id="state"> <br>
 
-                <label for="country">Country</label> <input type="text" id="country" placeholder="India"><br>
+                <label for="country" id="cont">Country</label> <input type="text" id="country" placeholder="India"><br>
                 </section>
 
 
@@ -143,7 +155,7 @@ h1 {
                     <input type="checkbox" id="writing"><label for="writing">Writing</label>
                     <input type="checkbox" id="singing"><label for="singing">Singing</label>
                     <input type="checkbox" id="Dancing"><label for="Dancing">Dancing</label><br>
-                    <input type="checkbox" id="travelling">Travelling<label for="travelling"></label>
+                    <input type="checkbox" id="travelling"><label for="travelling">Travelling</label>
                     <input type="checkbox" id="others"><label for="others">Others</label><input type="text"><br><br>
                 </section>
                 <Span>

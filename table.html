@@ -5,15 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        .table {
+            margin-left: 20vw;
+            margin-top: 15vh;
+            text-align: center;
+        }
+
+        body {
+            background-image: url(space.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: aliceblue;
+        }
+
+        .data {
+            font-size: 25px;
+        }
+
+        body {
+            line-height: 25px;
+        }
+    </style>
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
 </head>
 
 <body>
     <main>
         
-            <table border="" style="text-align: center;">
+            <table border="" class="table">
                 <thead>
-                   <h3 style="margin-left: 20vw;">Data about the planets of our solar system</h3> 
+                    <tr>
+                    <th colspan="10" class="data">
+                        Data about the planets of our solar system
+                    </th>
+                </tr>
                 </thead>
                 <tbody>
                     <tr>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            border: 0;
+            padding: 0;
+            background-color: rgba(73, 141, 166, 0.496);
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .container table{
+            margin: 50px auto;
+            width: 900px;
+            background-color: white;
+        }
+        .table-container { 
+            border-collapse: collapse; 
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .head-container tr th{
+            text-align: left;
+           padding: 15px 10px;
+           /* padding-top: 5px;
+           padding-bottom: 5px; */
+           background-color: rgba(137, 43, 226, 0.515);
+        }
+
+        .body-container tr td{
+            padding: 15px 12px;
+        }
+
+        .bottom-border {
+            border-bottom: dotted lightgrey;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container"> 
+        <table class="table-container">
+
+            <thead class="head-container">
+                <tr class="bottom-border">
+                    <th>Full name</th>
+                    <th>Age</th>
+                    <th>Job title</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody class="body-container">
+                <tr class="bottom-border">
+                    <td>Santosh mishra</td>
+                    <td>21</td>
+                    <td>Full-stack developer</td>
+                    <td>Bangalore</td>
+                </tr>
+                <tr class="bottom-border">
+                    <td>Saktiprakash sahoo</td>
+                    <td>20</td>
+                    <td>HR</td>
+                    <td>Delhi</td>
+                </tr>
+                <tr class="bottom-border">
+                    <td>Deepak puhan</td>
+                    <td>21</td>
+                    <td>Accountant</td>
+                    <td>Delhi</td>
+                </tr>
+                <tr class="bottom-border">
+                    <td>Soubhagya behera</td>
+                    <td>22</td>
+                    <td>Chemical engineer</td>
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>Santosh mallick</td>
+                    <td>22</td>
+                    <td>Teacher</td>
+                    <td>Mumbai</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, #5ee2e233, #00ffff);
+}
+
+.box-container {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+    top: 100px;
+    margin: 0px auto;
+    background-color: #fdfbfbbe;
+    /* backdrop-filter: blur(8px); */
+    box-shadow: 2px 2px 5px rgba(206, 196, 196, 0.897);
+    padding: 0px 30px;
+    z-index: 2;
+}
+.header h1 {
+    margin-top: 10px;
+}
+.header p {
+   color: rgb(90, 97, 97);
+}
+
+input {
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid rgb(107, 106, 106);
+    border-radius: 4px;
+    height: 20px;
+    padding: 0px 3px;
+    display: block;
+}
+
+label {
+    font-size: 1.2rem;
+}
+.main p {
+    margin-top: 10px;
+}
+
+
+input[type=submit] {
+    height: 22px;
+    background-color: rgb(46, 120, 120);
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+input[type=submit]:hover {
+    background-color: rgb(28, 64, 64);
+}
+
+.circle1 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to top left, rgb(255, 253, 253), rgb(176, 236, 246));
+}
+
+.circle2 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to top left, rgb(255, 253, 253), rgb(176, 236, 246));
+}
